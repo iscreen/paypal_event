@@ -2,7 +2,7 @@
 
 [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/paypal_event?type=total)](https://rubygems.org/gems/paypal_event)
 [![Build Status](https://travis-ci.org/iscreen/paypal_event.svg?branch=master)](https://travis-ci.org/iscreen/paypal_event)
-[![Code Climate](https://codeclimate.com/github/iscreen/paypal_event.svg)](https://codeclimate.com/github/iscreen/paypal_event)
+[![Coverage Status](https://coveralls.io/repos/github/iscreen/paypal_event/badge.svg?branch=master)](https://coveralls.io/github/iscreen/paypal_event?branch=master)
 [![Inline docs](https://inch-ci.org/github/iscreen/paypal_event.svg?branch=master)](http://www.rubydoc.info/gems/paypal_event)
 
 PaypalEvent is built on the [ActiveSupport::Notifications API](http://api.rubyonrails.org/classes/ActiveSupport/Notifications.html). Incoming webhook requests are [authenticated with the webhook signature](#authenticating-webhooks-with-signatures). Define subscribers to handle specific event types. Subscribers can be a block or an object that responds to `#call`.
