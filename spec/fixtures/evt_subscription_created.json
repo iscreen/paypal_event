@@ -1,0 +1,105 @@
+{
+  "id": "WH-58L94689MM451173B-6A69177489964403N",
+  "event_version": "1.0",
+  "create_time": "2019-01-25T06:27:47.897Z",
+  "resource_type": "Agreement",
+  "event_type": "BILLING.SUBSCRIPTION.CREATED",
+  "summary": "A billing subscription was created",
+  "resource": {
+    "agreement_details": {
+      "outstanding_balance": {
+        "value": "0.00"
+      },
+      "num_cycles_remaining": "0",
+      "num_cycles_completed": "0",
+      "next_billing_date": "2019-01-25T10:00:00Z",
+      "final_payment_due_date": "1970-01-01T00:00:00Z",
+      "failed_payment_count": "0"
+    },
+    "description": "Monthly agreement with a regular monthly payment definition without setup fee.",
+    "links": [
+      {
+        "href": "api.sandbox.paypal.com/v1/payments/billing-agreements/I-FXVRY54BBMLX",
+        "rel": "self",
+        "method": "GET"
+      }
+    ],
+    "shipping_address": {
+      "recipient_name": "test buyer",
+      "line1": "1 Main St",
+      "city": "San Jose",
+      "state": "CA",
+      "postal_code": "95131",
+      "country_code": "US"
+    },
+    "id": "I-FXVRY54BBMLX",
+    "state": "Active",
+    "payer": {
+      "payment_method": "paypal",
+      "status": "verified",
+      "payer_info": {
+        "email": "ivseas-buyer@gmail.com",
+        "first_name": "test",
+        "last_name": "buyer",
+        "payer_id": "CEFV4R3YLBNXJ",
+        "shipping_address": {
+          "recipient_name": "test buyer",
+          "line1": "1 Main St",
+          "city": "San Jose",
+          "state": "CA",
+          "postal_code": "95131",
+          "country_code": "US"
+        }
+      }
+    },
+    "plan": {
+      "curr_code": "USD",
+      "links": null,
+      "payment_definitions": [
+        {
+          "type": "REGULAR",
+          "frequency": "Month",
+          "frequency_interval": "1",
+          "amount": {
+            "value": "9.99"
+          },
+          "cycles": "0",
+          "charge_models": [
+            {
+              "type": "TAX",
+              "amount": {
+                "value": "0.00"
+              }
+            },
+            {
+              "type": "SHIPPING",
+              "amount": {
+                "value": "0.00"
+              }
+            }
+          ]
+        }
+      ],
+      "merchant_preferences": {
+        "setup_fee": {
+          "value": "0.00"
+        },
+        "auto_bill_amount": "YES",
+        "max_fail_attempts": "0"
+      }
+    },
+    "start_date": "2019-01-25T08:00:00Z"
+  },
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/notifications/webhooks-events/WH-58L94689MM451173B-6A69177489964403N",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/notifications/webhooks-events/WH-58L94689MM451173B-6A69177489964403N/resend",
+      "rel": "resend",
+      "method": "POST"
+    }
+  ]
+}
